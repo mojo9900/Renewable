@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Experiments</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Overpass:wght@600&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Catamaran', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+    }
+
+    header {
+      height: 10vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .nav-bar {
+      display: flex;
+      padding: 2px 90px;
+      background-color: darkgrey;
+    }
+
+    .navlogo {
+      flex: 25%;
+    }
+
+    .navlogo img {
+      width: 80px;
+      padding: 9px;
+    }
+
+    .navmenu {
+      flex: 80%;
+      display: relative;
+    }
+
+    .navmenu ul {
+      display: absolute;
+      float: right;
+    }
+
+    .navmenu ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 24px 28px;
+    }
+
+    .navmenu ul a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px
+    }
+
+    .navmenu ul li::after {
+      content: '';
+      width: 0%;
+      height: 1px;
+      background: DarkCyan;
+      display: block;
+      margin: auto;
+      transition: .1s;
+    }
+
+    .navmenu ul li:hover::after {
+      width: 100%;
+    }
+
+    .content {
+      display: flex;
+      width: 80%;
+      margin: auto;
+      min-height: 70vh;
+      align-items: center;
+    }
+
+    .text h1 {
+      font-size: 4.5em;
+      font-weight: 600;
+      font-family: 'Overpass', sans-serif;
+      padding: 10px 0px;
+    }
+
+    .text h2 {
+      font-family: 'Overpass', sans-serif;
+      font-size: 2em;
+      padding: 10px 0px;
+    }
+
+    .text h3 {
+      font-family: 'Overpass', sans-serif;
+      font-size: 1.4em;
+    }
+
+    .text p {
+      text-align: justify;
+      padding: 8px 0px;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <div class="navlogo">
+        <a href="LandingPage.html"><img
+            src="https://www.uowmkdu.edu.my/wp-content/themes/kdu/img/UOWMKDU-logb.png.webp"></a>
+      </div>
+      <div class="navmenu">
+        <ul>
+          <li><a href="Intro.html">Introduction</a></li>
+          <li><a href="Theory.html">Theory</a></li>
+          <li><a href="Experiment.html">Experiments</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="content">
+      <div class="text">
+        <h1>Experiments</h1>
+        <h2>Solar Energy</h2>
+        <div>
+          <div class="container">
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+              <label for="month" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Month: </label>
+
+              <select name="month" id="month" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="0">January</option>
+                <option value="31">Feruary</option>
+                <option value="59">March</option>
+                <option value="90">April</option>
+                <option value="120">May</option>
+                <option value="151">June</option>
+                <option value="181">July</option>
+                <option value="212">August</option>
+                <option value="243">September</option>
+                <option value="273">October</option>
+                <option value="304">November</option>
+                <option value="334">December</option>
+              </select>
+              <label for="day" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Day: </label>
+
+              <select name="day" id="day" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+              <label for="latitude" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Latitude:</label>
+
+              <select name="latitude" id="latitude" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="-90">-90</option>
+                <option value="-80">-80</option>
+                <option value="-70">-70</option>
+                <option value="-60">-60</option>
+                <option value="-50">-50</option>
+                <option value="-40">-40</option>
+                <option value="-30">-30</option>
+                <option value="-20">-20</option>
+                <option value="-10">-10</option>
+                <option value="0">0</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+              <label for="longitude" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Longitude:</label>
+
+              <select name="longitude" id="longitude" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="-180">-180</option>
+                <option value="-160">-160</option>
+                <option value="-140">-140</option>
+                <option value="-120">-120</option>
+                <option value="-100">-100</option>
+                <option value="-80">-80</option>
+                <option value="-60">-60</option>
+                <option value="-40">-40</option>
+                <option value="-20">-20</option>
+                <option value="0">0</option>
+                <option value="20">20</option>
+                <option value="40">40</option>
+                <option value="60">60</option>
+                <option value="80">80</option>
+                <option value="100">100</option>
+                <option value="120">120</option>
+                <option value="140">140</option>
+                <option value="160">160</option>
+                <option value="180">180</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+              <label for="timezone" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Time Zone:</label>
+
+              <select name="timezone" id="timezone" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="-12">-12</option>
+                <option value="-11">-11</option>
+                <option value="-10">-10</option>
+                <option value="-9">-9</option>
+                <option value="-8">-8</option>
+                <option value="-7">-7</option>
+                <option value="-6">-6</option>
+                <option value="-5">-5</option>
+                <option value="-4">-4</option>
+                <option value="-3">-3</option>
+                <option value="-2">-2</option>
+                <option value="-1">-1</option>
+                <option value="0">0</option>
+                <option value="1">+1</option>
+                <option value="2">+2</option>
+                <option value="3">+3</option>
+                <option value="4">+4</option>
+                <option value="5">+5</option>
+                <option value="6">+6</option>
+                <option value="7">+7</option>
+                <option value="8">+8</option>
+                <option value="9">+9</option>
+                <option value="10">+10</option>
+                <option value="11">+11</option>
+                <option value="12">+12</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+              <label for="time" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Local Time (Hour):</label>
+
+              <select name="time" id="time" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+              <label for="Lcurrent" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Light Generated Current:</label>
+
+              <select name="Lcurrent" id="Lcurrent" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="0">0 A</option>
+                <option value="1">1 A</option>
+                <option value="2">2 A</option>
+                <option value="3">3 A</option>
+                <option value="4">4 A</option>
+                <option value="5">5 A</option>
+                <option value="6">6 A</option>
+                <option value="7">7 A</option>
+                <option value="8">8 A</option>
+                <option value="9">9 A</option>
+                <option value="10">10 A</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+              <label for="Dcurrent" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Dark Saturation Current :</label>
+
+              <select name="Dcurrent" id="Dcurrent" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="0">0 A</option>
+                <option value="1">1 A</option>
+                <option value="2">2 A</option>
+                <option value="3">3 A</option>
+                <option value="4">4 A</option>
+                <option value="5">5 A</option>
+                <option value="6">6 A</option>
+                <option value="7">7 A</option>
+                <option value="8">8 A</option>
+                <option value="9">9 A</option>
+                <option value="10">10 A</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+              <label for="voltage" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Local Voltage :</label>
+
+              <select name="voltage" id="voltage" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="50">50 V</option>
+                <option value="80">80 V</option>
+                <option value="100">100 V</option>
+                <option value="120">120 V</option>
+                <option value="180">180 V</option>
+                <option value="200">200 V</option>
+                <option value="220">220 V</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+              <label for="temperature" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Temperature:</label>
+
+              <select name="temperature" id="temperature" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="273">273 K</option>
+                <option value="280">280 K</option>
+                <option value="290">290 K</option>
+                <option value="310">310 K</option>
+                <option value="330">330 K</option>
+                <option value="350">350 K</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+              <label for="cellarea" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Area of solar cell :</label>
+
+              <select name="cellarea" id="cellarea" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="1">1 m^2</option>
+                <option value="10">10 m^2</option>
+                <option value="20">20 m^2</option>
+                <option value="30">30 m^2</option>
+                <option value="40">40 m^2</option>
+                <option value="50">50 m^2</option>
+                <option value="60">60 m^2</option>
+                <option value="70">70 m^2</option>
+                <option value="80">80 m^2</option>
+                <option value="90">90 m^2</option>
+                <option value="100">100 m^2</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+              <label for="numCells" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Number of cells in series:</label>
+
+              <select name="numCells" id="numCells" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                <option value="" selected disabled>--Please choose an option--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="1">11</option>
+                <option value="2">12</option>
+                <option value="3">13</option>
+                <option value="4">14</option>
+                <option value="5">15</option>
+                <option value="6">16</option>
+                <option value="7">17</option>
+                <option value="8">18</option>
+                <option value="9">19</option>
+                <option value="10">20</option>
+                <option value="1">21</option>
+                <option value="2">22</option>
+                <option value="3">23</option>
+                <option value="4">24</option>
+                <option value="5">25</option>
+                <option value="6">26</option>
+                <option value="7">27</option>
+                <option value="8">28</option>
+                <option value="9">29</option>
+                <option value="10">30</option>
+                <option value="1">31</option>
+                <option value="2">32</option>
+                <option value="3">33</option>
+                <option value="4">34</option>
+                <option value="5">35</option>
+                <option value="6">36</option>
+                <option value="7">37</option>
+                <option value="8">38</option>
+                <option value="9">39</option>
+                <option value="10">40</option>
+                <option value="1">41</option>
+                <option value="2">42</option>
+                <option value="3">43</option>
+                <option value="4">44</option>
+                <option value="5">45</option>
+                <option value="6">46</option>
+                <option value="7">47</option>
+                <option value="8">48</option>
+                <option value="9">49</option>
+                <option value="10">50</option>
+              </select>
+            </div>
+            <div class="col-lg-6 col-md-6" style="padding:5px;">
+                <label for="cel1larea" style="font-size: 14px; font-weight: bold; color: rgb(23, 44, 82);">Area covered by solar cells :</label>
+  
+                <select name="cel1larea" id="cel1larea" type="number" style="font-size: 12px; font-weight: bold; color: rgb(23, 44, 82);">
+                  <option value="" selected disabled>--Please choose an option--</option>
+                  <option value="1">1 m^2</option>
+                  <option value="10">10 m^2</option>
+                  <option value="20">20 m^2</option>
+                  <option value="30">30 m^2</option>
+                  <option value="40">40 m^2</option>
+                  <option value="50">50 m^2</option>
+                  <option value="60">60 m^2</option>
+                  <option value="70">70 m^2</option>
+                  <option value="80">80 m^2</option>
+                  <option value="90">90 m^2</option>
+                  <option value="100">100 m^2</option>
+                </select>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="btn btn-primary" onclick="sum()">Test</button>
+          <br>
+        </div>
+        <div id="H" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="decang" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="lstm" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="eot" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="tc" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="lst" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="hourang" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="zenithang" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="altang" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="am" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="solint" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="azimang" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="I" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="Isc" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <div id="Voc" style="font-size: 16px; font-weight: bold; color: rgb(31, 78, 165);">
+        </div>
+        <br>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function sum() {
+      var mh = document.getElementById('month');
+      var month = mh.value;
+      var dy = document.getElementById('day');
+      var day = dy.value;
+      var lttd = document.getElementById('latitude');
+      var latitude = lttd.value;
+      var lgtd = document.getElementById('longitude');
+      var longitude = lgtd.value;
+      var tzone = document.getElementById('timezone');
+      var timezone = tzone.value;
+      var tm = document.getElementById('time');
+      var time = tm.value;
+      var Lt = document.getElementById('Lcurrent');
+      var Lcurrent = Lt.value;
+      var Dt = document.getElementById('Dcurrent');
+      var Dcurrent = Dt.value;
+      var vt = document.getElementById('voltage');
+      var voltage = vt.value;
+      var temp = document.getElementById('temperature');
+      var temperature = temp.value;
+      var ca = document.getElementById('cellarea');
+      var cellarea = ca.value;
+      var nc = document.getElementById('numCells');
+      var numCells = nc.value;
+
+      var n = Number(month) + Number(day);
+      var a = (360 / 365) * (Number(n) - 2);
+      var l = 0.33 * Math.cos(Number(a) * Math.PI /180);
+      var m = 1 + Number(l);
+      var H = 1353 * Number(m);
+      var b = (360 / 365) * (284 + Number(n)) ;
+      var dec_ang = 23.45 * Math.sin(Number(b) * Math.PI /180);
+      var LSTM = 15 * Number(timezone);
+      var B = (360 / 365) * (Number(n) - 81);
+      var c = Number(B) * Math.PI / 180;
+      var n = 2 * Number(c);
+      var EoT = (9.87 * Math.sin(Number(n))) - (7.53 * Math.cos(Number(c))) - (1.5 * Math.sin(Number(c)));
+      var o = 4 * (Number(longitude) - Number(LSTM));
+      var TC = Number(o) + Number(EoT);
+      var LST = Number(time) + (Number(TC) / 60);
+      var hour_angle = 15 * (Number(LST) - 12);
+      var d = (Math.sin(Number(latitude) * Math.PI /180) * Math.sin(Number(dec_ang))) + (Math.cos(Number(latitude) * Math.PI /180) * Math.cos(Number(dec_ang)) * Math.cos(Number(hour_angle) * Math.PI /180));
+      var zenith_angle = Math.acos(Number(d)) * 180 / Math.PI;
+      var altitude_angle = 90 - Number(zenith_angle);
+      var AM = 1 / Number(d);
+      var h = Math.pow(Number(AM), 0.678);
+      var solar_intensity = 1.353 * Math.pow(0.7, Number(h));
+      var i = (Number(d) * Math.sin(Number(latitude) * Math.PI /180)) - Math.sin(dec_ang);
+      var j = Math.sin(Number(zenith_angle) * Math.PI /180) * Math.cos(Number(latitude) * Math.PI /180);
+      var k = Number(i) / Number(j);
+      var azimuth_angle = Math.acos(Number(k)) * 180 / Math.PI;
+
+
+
+      var e = (1.6 * Math.pow(10, -19) * Number(voltage)) / (2.36 * Math.pow(10, -22) * Number(temperature));
+      var I = Number(Lcurrent) - (Number(Dcurrent) * (Math.exp(Number(e)) -1));
+      var Isc = Number(Lcurrent);
+      var f = ((2.36 * Math.pow(10, -22) * Number(temperature)) / (1.6 * Math.pow(10, -19)));
+      var g = 1 + (Number(Lcurrent) / Number(Dcurrent));
+      var Voc = Number(f) * Math.log(Number(g));
+
+      document.getElementById('H').innerHTML = 'Solar Radiation outside Earth’s Atmosphere = ' + H;
+      document.getElementById('decang').innerHTML = 'Declination angle = ' + dec_ang;
+      document.getElementById('lstm').innerHTML = 'Local Standard Time Meridian = ' + LSTM;
+      document.getElementById('eot').innerHTML = 'Equation of Time = ' + EoT;
+      document.getElementById('tc').innerHTML = 'Time Correction Factor = ' + TC;
+      document.getElementById('lst').innerHTML = 'Local Solar Time = ' + LST;
+      document.getElementById('hourang').innerHTML = 'Hour angle = ' + hour_angle;
+      document.getElementById('zenithang').innerHTML = 'Zenith angle = ' + zenith_angle;
+      document.getElementById('altang').innerHTML = 'Altitude angle = ' + altitude_angle;
+      document.getElementById('am').innerHTML = 'Air Mass = ' + AM;
+      document.getElementById('solint').innerHTML = 'Solar Intensity = ' + solar_intensity;
+      document.getElementById('azimang').innerHTML = 'Solar Azimuth Angle = ' + azimuth_angle;
+      document.getElementById('I').innerHTML = 'Net Current in a PV Cell = ' + I;
+      document.getElementById('Isc').innerHTML = 'Short-circuit Current = ' + Isc;
+      document.getElementById('Voc').innerHTML = 'Open-circuit Voltage = ' + Voc;
+      
+
+    }
+  </script>
+</body>
+
+</html>

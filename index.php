@@ -1,0 +1,12 @@
+<?php
+include_once("Homepage.html");
+include_once("LandingPage.html");
+include_once("AboutUs.html");
+include_once("Experiment.html");
+include_once("Intro.html");
+include_once("Theory.html");
+include_once("LandingPagesolar.html");
+include_once("Experimentsolar.html");
+include_once("Introsolar.html");
+include_once("Theorysolar.html");
+?>
